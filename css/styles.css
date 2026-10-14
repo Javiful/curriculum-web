@@ -642,14 +642,22 @@ a {
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.65s cubic-bezier(0.22, 0.61, 0.36, 1), transform 0.65s cubic-bezier(0.22, 0.61, 0.36, 1);
+  opacity: 1;
 }
 
-.reveal.is-visible {
-  opacity: 1;
-  transform: none;
+.js .reveal.is-visible {
+  animation: reveal-rise 0.6s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+@keyframes reveal-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .rail__top,
@@ -731,9 +739,8 @@ a {
     scroll-behavior: auto !important;
   }
 
-  .reveal {
-    opacity: 1;
-    transform: none;
+  .js .reveal.is-visible {
+    animation: none;
   }
 }
 
@@ -781,9 +788,8 @@ a {
     box-shadow: none;
   }
 
-  .reveal {
-    opacity: 1;
-    transform: none;
+  .js .reveal.is-visible {
+    animation: none;
   }
 
   .job {
