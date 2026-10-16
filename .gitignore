@@ -1,0 +1,4 @@
+# Tooling local de skills (registry autoskills, skills descargadas)
+.agents/
+autoskills/
+skills-lock.json
