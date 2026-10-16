@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://javiful.github.io/curriculum-web/sitemap.xml

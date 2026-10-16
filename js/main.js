@@ -7,7 +7,6 @@
     root.setAttribute("data-theme", theme);
     if (!toggle) return;
     var dark = theme === "dark";
-    toggle.setAttribute("aria-pressed", String(dark));
     if (label) label.textContent = dark ? "Modo claro" : "Modo oscuro";
   }
 
